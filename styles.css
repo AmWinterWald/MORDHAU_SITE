@@ -1,0 +1,26 @@
+.veapon {
+    width: 100%;
+    background:gray;
+}
+
+ body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+ }    
+ .floating-box {
+    background: rgba(255, 255, 255, 0.2);  
+    backdrop-filter: blur(10px);          
+    border-radius: 20px;                   
+    padding: 30px;                         
+    width: 300px;                          
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    margin: 20px;                          
+    text-align: center;                   
+    color: white;                         
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
