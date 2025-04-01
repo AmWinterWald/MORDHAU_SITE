@@ -6,31 +6,174 @@
     <title > MORDHAU IT... </title>
 
 </head>
-<body style="background-image: url(images/Knight.jpg); background-repeat: no-repeat; background-position: center; margin: 0; height: 100vh ">
-    <div class="floating-box">
-        <h2>MORDHAU Это...</h2>
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif; 
+        background-color: #f5f5f5; 
+        padding: 40px;
+        line-height: 1.6; 
+    }
+
+    .container {
+        max-width: 50%;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .text-block {
+        background: rgb(243, 243, 243); 
+        border-radius: 12px; 
+        padding: 40px; 
+        margin-bottom: 70px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        width: 60%;
+        margin: left;
+    }
+
+    .text-block:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    }
+
+    .text-block h2 {
+        color: #2c3e50;
+        margin-top: 0;
+        font-weight: 600; 
+    }
+
+    .text-block p {
+        color: #34495e;
+        margin-bottom: 0;
+    }
+
+    .text-block.highlight {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white; 
+    }
+
+    .text-block.highlight h2,
+    .text-block.highlight p {
+        color: white;
+    }
+
+  .fullscreen-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+     }
+
+    .fullscreen-image img {
+         width: 100%;
+         height: 100%;
+        object-fit: cover; 
+        object-position: center; 
+     }
+    .fullscreen-image::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+            circle at center,
+            transparent 0%,
+            rgba(0, 0, 0, 0.7) 150%
+        );
+         pointer-events: none;
+    }
+
+    .image-link-wrapper {
+        max-width: 800px;
+         margin: 40px auto;
+        text-align: left;
+    }
+        
+    .clickable-image {
+        border-radius: 12px; 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        max-width: 100%;
+        height: auto; 
+        border: 1px solid #eee; 
+    }
+        
+    .clickable-image:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+</style>
+
+<H1>MORDHAU это...</H1>
+</head>
+<div>
+<body>
+    <div class="text-block">
+        <p><b><h2>это жестокий и весёлый слэшер в сеттинге средневековья, где можно рубиться, колоть и лупить всех подряд в хаотичных битвах.</h2></b></p>
     </div>
-         <p><b>- жестокий и безумно адреналиновый</b>
-          <i>средневековый</i>
-             слэшер, где можно:
-             <ul> <li><b>рубиться</b></li>
-                <li><b>колоть и крушить</b></li> </ul>
-                 врагов в эпических битвах. </h1></p>
-                 <img src="images/mord1.jpg" alt="mord1" width="700" height="400" title="battle 3x3">
-<P><b>Какие же оссобенности есть у этой игры? Их много! Например:</b></P>
-<div class="floating-box">
-<ul>
-    <li><h3>Реалистичный бой — здесь нет дурацких комбо-кнопок, только физика, тайминг и хитрость. </h3></li>
-    <li><h3>Кровавая резня — мечи, топоры, луки и даже кувалды в твоих руках превращаются в орудия кровавого карнавала.</h3></li>
-    <li><h3>Кастомизация — создай своего ублюдка-наёмника: от брони до голоса (да, можно орать матом перед атакой). </h3></li>
-    <li><h3>Режимы — дуэли, королевские битвы, осады замков и даже строительство баррикад. </h3></li>
-    <li><h3>Мемы и троллинг — игроки лютуют: кто-то играет на лютне, пока другие режут друг друга, а кто-то в доспехах гоняется за голыми дезертирами. </h3></li>
-    <p><href=https://triternion.com></href></p> 
-</ul>
+    <div>
+        <h2 class="text-block.highlight">В чём особенности? А их много, например...</h2>
+    </div>
+    <div class="text-block">
+        <h2>Реалистичный хардкорный комбат<h2>
+        <p>тут нет кнопки "блок", нужно вручную направлять удары и парировать, а ещё учитывать инерцию оружия. Один неверный движ – и твоя башка уже катится по полю.</p>
+    </div>
+    <div class="text-block">
+        <h2>Полная свобода действий<h2>
+        <p>хочешь быть бронированным танком с двуручником, хочешь – голым психом с кувалдой, а можешь просто стоять и играть на лютне, пока вокруг резня.</p>
+    </div>
+    <div class="text-block">
+        <h2>Мясорубка в 64 человека<h2>
+        <p>эпичные сражения на картах с осадами, конными атаками и катапультами. Тут можно и в толпе рубиться, и с балкона арбалетом стрелять.</p>
+    </div>
+    <div class="text-block">
+        <h2>Физика и жесть<h2>
+        <p>трупы летают, отрубленные конечности валяются, а если сильно размахнуться, можно случайно завалить союзника (или себя).</p>
+    </div>
+    <div class="text-block">
+        <h2>Ваншоты и кринж<h2>
+        <p>если попал в голову – враг мгновенно накрылся, но если промазал – сам будешь выглядеть как конченный лузер.</p>
+    </div>
+    <div class="text-block">
+        <h2>Кастомизация<h2>
+        <p>можно создать своего уродца с уникальной внешностью и оружием, от благородного рыцаря до деревенского дебила в кастрюле вместо шлема.</p>
+    </div>
+    <div class="text-block">
+        <h2>Голосовые команды и троллинг<h2>
+        <p>можно орать "СЛАВА КОРОЛЮ!", смеяться над трупами или просто материть тиммейтов за неудачный заход.</p>
+    </div>
+</body>
+<div class="fullscreen-image">
+    <img src="#" alt="Фоновое изображение knight">
 </div>
-
-    <a href="mordhau_site2.html" target="_blank"> Весь мувменот в MORDHAU  </a>
-    <img src="images/tr_logo.png" alt="Сайт разаработчиков игры" width="300" height="200">
-
+<div class="image-link-wrapper">
+    <a href="https://triternion.com/" target="dev.site">
+        <img 
+        src="/images/tr_logo.png" 
+            alt="dev.site" 
+            class="clickable-image"
+        >
+    </a>
+    <p style="margin-top: 15px; color: #666;">
+        Нажмите на изображение, чтобы перейти на сайт разработчиков
+    </p>
+</div>
+<div class="image-link-wrapper">
+    <a href="/MORDHAU_SITE/mordhau_site2.html" target="Весь мувмет в Mordhau">
+        <img 
+        src="/images/mord1.jpg" 
+            alt="Весь мувмет в Mordhau" 
+            class="clickable-image"
+        >
+    </a>
+    <p style="margin-top: 15px; color: #666;">
+        Нажмите на изображение, чтобы читать следующую статью...
+    </p>
+</div>
 </body>
 </html>
